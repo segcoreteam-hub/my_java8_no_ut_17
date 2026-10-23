@@ -21,6 +21,8 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
+                    <!-- 3.13.0 is required to emit Java 25 bytecode; verified working with the
+                         local Apache Maven 3.8.4 (see UPGRADE_NOTES.md). -->
                     <version>3.13.0</version>
                     <configuration>
                         <release>25</release>
